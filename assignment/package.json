@@ -1,0 +1,33 @@
+{
+  "name": "bulk-email-sender",
+  "version": "2.0.0",
+  "description": "Web-based bulk email sender (Migrated to Node.js)",
+  "type": "module",
+  "main": "src/app.ts",
+  "scripts": {
+  "dev": "tsx watch src/app.ts",
+  "build": "tsc",
+  "start": "node dist/app.ts",  
+  "clean": "rm -rf dist uploads/* logs/* database.sqlite"
+},
+  "dependencies": {
+    "@hono/node-server": "^1.13.7",
+    "argon2": "^0.31.2",
+    "better-sqlite3": "^11.10.0",
+    "cors": "^2.8.5",
+    "csv-stringify": "^6.4.4",
+    "dotenv": "^16.3.1",
+    "hono": "^4.6.14",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.8",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.17.9",
+    "@types/nodemailer": "^6.4.14",
+    "tsx": "^4.19.2",
+    "typescript": "^5.3.3"
+  }
+}
